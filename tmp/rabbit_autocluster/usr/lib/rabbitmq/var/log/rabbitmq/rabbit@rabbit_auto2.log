@@ -1,0 +1,152 @@
+
+=INFO REPORT==== 18-Nov-2017::19:09:48 ===
+Starting RabbitMQ 3.6.14 on Erlang 19.3
+Copyright (C) 2007-2017 Pivotal Software, Inc.
+Licensed under the MPL.  See http://www.rabbitmq.com/
+
+=INFO REPORT==== 18-Nov-2017::19:09:48 ===
+node           : rabbit@rabbit_auto2
+home dir       : /root
+config file(s) : /usr/lib/rabbitmq/etc/rabbitmq/rabbitmq.config
+cookie hash    : iqG7DCBA+lxNNLQq/Y6efg==
+log            : /usr/lib/rabbitmq/var/log/rabbitmq/rabbit@rabbit_auto2.log
+sasl log       : /usr/lib/rabbitmq/var/log/rabbitmq/rabbit@rabbit_auto2-sasl.log
+database dir   : /usr/lib/rabbitmq/var/lib/rabbitmq/mnesia/rabbit@rabbit_auto2
+
+=INFO REPORT==== 18-Nov-2017::19:09:50 ===
+autocluster: Running discover/join step
+
+=INFO REPORT==== 18-Nov-2017::19:09:50 ===
+autocluster: Apps 'rabbit' and 'mnesia' successfully stopped
+
+=INFO REPORT==== 18-Nov-2017::19:09:50 ===
+autocluster: Running step initialize_backend
+
+=ERROR REPORT==== 18-Nov-2017::19:09:50 ===
+autocluster: Skipping step initialize_backend because backend module is not configured! 
+
+=INFO REPORT==== 18-Nov-2017::19:09:50 ===
+autocluster: Starting back 'rabbit' application
+
+=INFO REPORT==== 18-Nov-2017::19:09:50 ===
+Memory high watermark set to 793 MiB (832526745 bytes) of 992 MiB (1040658432 bytes) total
+
+=INFO REPORT==== 18-Nov-2017::19:09:50 ===
+Enabling free disk space monitoring
+
+=INFO REPORT==== 18-Nov-2017::19:09:50 ===
+Disk free limit set to 50MB
+
+=INFO REPORT==== 18-Nov-2017::19:09:50 ===
+Limiting to approx 924 file handles (829 sockets)
+
+=INFO REPORT==== 18-Nov-2017::19:09:50 ===
+FHC read buffering:  OFF
+FHC write buffering: OFF
+
+=INFO REPORT==== 18-Nov-2017::19:09:50 ===
+Database directory at /usr/lib/rabbitmq/var/lib/rabbitmq/mnesia/rabbit@rabbit_auto2 is empty. Initialising from scratch...
+
+=INFO REPORT==== 18-Nov-2017::19:09:50 ===
+Waiting for Mnesia tables for 30000 ms, 9 retries left
+
+=INFO REPORT==== 18-Nov-2017::19:09:50 ===
+Waiting for Mnesia tables for 30000 ms, 9 retries left
+
+=INFO REPORT==== 18-Nov-2017::19:09:50 ===
+Waiting for Mnesia tables for 30000 ms, 9 retries left
+
+=INFO REPORT==== 18-Nov-2017::19:09:50 ===
+Priority queues enabled, real BQ is rabbit_variable_queue
+
+=INFO REPORT==== 18-Nov-2017::19:09:50 ===
+Starting rabbit_node_monitor
+
+=INFO REPORT==== 18-Nov-2017::19:09:50 ===
+Management plugin: using rates mode 'basic'
+
+=INFO REPORT==== 18-Nov-2017::19:09:50 ===
+msg_store_transient: using rabbit_msg_store_ets_index to provide index
+
+=INFO REPORT==== 18-Nov-2017::19:09:50 ===
+msg_store_persistent: using rabbit_msg_store_ets_index to provide index
+
+=WARNING REPORT==== 18-Nov-2017::19:09:50 ===
+msg_store_persistent: rebuilding indices from scratch
+
+=INFO REPORT==== 18-Nov-2017::19:09:50 ===
+Adding vhost '/custom'
+
+=INFO REPORT==== 18-Nov-2017::19:09:50 ===
+Creating user 'guest'
+
+=INFO REPORT==== 18-Nov-2017::19:09:50 ===
+Setting user tags for user 'guest' to [administrator]
+
+=INFO REPORT==== 18-Nov-2017::19:09:50 ===
+Setting permissions for 'guest' in '/custom' to '.*', '.*', '.*'
+
+=INFO REPORT==== 18-Nov-2017::19:09:50 ===
+started TCP Listener on [::]:5672
+
+=INFO REPORT==== 18-Nov-2017::19:09:50 ===
+autocluster: Running registeration step
+
+=INFO REPORT==== 18-Nov-2017::19:09:50 ===
+autocluster: Running step register_with_backend
+
+=ERROR REPORT==== 18-Nov-2017::19:09:50 ===
+autocluster: Skipping step register_with_backend because backend module is not configured! 
+
+=INFO REPORT==== 18-Nov-2017::19:09:50 ===
+autocluster: Running lock release step
+
+=INFO REPORT==== 18-Nov-2017::19:09:50 ===
+autocluster: Running step release_startup_lock
+
+=ERROR REPORT==== 18-Nov-2017::19:09:50 ===
+autocluster: Skipping step release_startup_lock because backend module is not configured! 
+
+=INFO REPORT==== 18-Nov-2017::19:09:50 ===
+MQTT retained message store: rabbit_mqtt_retained_msg_store_dets
+
+=INFO REPORT==== 18-Nov-2017::19:09:50 ===
+started MQTT TCP Listener on [::]:1883
+
+=INFO REPORT==== 18-Nov-2017::19:09:50 ===
+rabbit_stomp: default user 'guest' enabled
+
+=INFO REPORT==== 18-Nov-2017::19:09:50 ===
+started STOMP TCP Listener on [::]:61613
+
+=INFO REPORT==== 18-Nov-2017::19:09:50 ===
+rabbit_web_stomp: listening for HTTP connections on 0.0.0.0:15674
+
+=INFO REPORT==== 18-Nov-2017::19:09:50 ===
+Management plugin started. Port: 15672
+
+=INFO REPORT==== 18-Nov-2017::19:09:50 ===
+Statistics database started.
+
+=INFO REPORT==== 18-Nov-2017::19:09:50 ===
+Server startup complete; 17 plugins started.
+ * rabbitmq_federation_management
+ * rabbitmq_shovel_management
+ * rabbitmq_management
+ * autocluster
+ * rabbitmq_shovel
+ * rabbitmq_web_dispatch
+ * rabbitmq_web_stomp
+ * rabbitmq_stomp
+ * rabbitmq_federation
+ * rabbitmq_mqtt
+ * rabbitmq_management_agent
+ * rabbitmq_consistent_hash_exchange
+ * amqp_client
+ * cowboy
+ * rabbitmq_aws
+ * sockjs
+ * cowlib
+
+=WARNING REPORT==== 18-Nov-2017::19:09:57 ===
+HTTP access denied: user 'guest' - invalid credentials
