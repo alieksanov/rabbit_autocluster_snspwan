@@ -1,0 +1,43 @@
+
+=CRASH REPORT==== 20-Nov-2017::03:56:21 ===
+  crasher:
+    initial call: application_master:init/4
+    pid: <0.228.0>
+    registered_name: []
+    exception exit: {bad_return,
+                        {{rabbit,start,[normal,[]]},
+                         {'EXIT',
+                             {{case_clause,
+                                  "Error while creating a Consul session, reason: {failed_connect,\n                                                [{to_address,\n                                                  {\"rabbit_auto2\",8500}},\n                                                 {inet,[inet],econnrefused}]}"},
+                              [{autocluster,acquire_startup_lock,1,
+                                   [{file,"src/autocluster.erl"},{line,213}]},
+                               {autocluster,run_steps,1,
+                                   [{file,"src/autocluster.erl"},{line,131}]},
+                               {autocluster,with_stopped_app,1,
+                                   [{file,"src/autocluster.erl"},{line,586}]},
+                               {autocluster,boot_step_discover_and_join,0,
+                                   [{file,"src/autocluster.erl"},{line,74}]},
+                               {rabbit_boot_steps,'-run_step/2-lc$^1/1-1-',1,
+                                   [{file,"src/rabbit_boot_steps.erl"},
+                                    {line,49}]},
+                               {rabbit_boot_steps,run_step,2,
+                                   [{file,"src/rabbit_boot_steps.erl"},
+                                    {line,49}]},
+                               {rabbit_boot_steps,
+                                   '-run_boot_steps/1-lc$^0/1-0-',1,
+                                   [{file,"src/rabbit_boot_steps.erl"},
+                                    {line,26}]},
+                               {rabbit_boot_steps,run_boot_steps,1,
+                                   [{file,"src/rabbit_boot_steps.erl"},
+                                    {line,26}]}]}}}}
+      in function  application_master:init/4 (application_master.erl, line 134)
+    ancestors: [<0.227.0>]
+    messages: [{'EXIT',<0.229.0>,normal}]
+    links: [<0.227.0>,<0.31.0>]
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 2586
+    stack_size: 27
+    reductions: 98
+  neighbours:

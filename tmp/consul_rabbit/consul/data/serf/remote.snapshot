@@ -128,3 +128,5 @@ coordinate: {"Vec":[0,0,0,0,0,0,0,0],"Error":1.5,"Adjustment":0,"Height":0.00001
 coordinate: {"Vec":[0,0,0,0,0,0,0,0],"Error":1.5,"Adjustment":0,"Height":0.00001}
 coordinate: {"Vec":[0,0,0,0,0,0,0,0],"Error":1.5,"Adjustment":0,"Height":0.00001}
 coordinate: {"Vec":[0,0,0,0,0,0,0,0],"Error":1.5,"Adjustment":0,"Height":0.00001}
+alive: consul_auto2.dc1 10.138.232.84:8302
+alive: consul_auto2.dc1 10.138.232.84:8302

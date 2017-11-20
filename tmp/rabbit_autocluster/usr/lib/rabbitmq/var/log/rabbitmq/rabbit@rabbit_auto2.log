@@ -165,3 +165,1256 @@ Server startup complete; 17 plugins started.
  * sockjs
  * amqp_client
  * cowlib
+
+=INFO REPORT==== 20-Nov-2017::03:56:19 ===
+autocluster: (cleanup) Timer started {60,false}
+
+=INFO REPORT==== 20-Nov-2017::03:56:19 ===
+Starting RabbitMQ 3.6.14 on Erlang 19.3
+Copyright (C) 2007-2017 Pivotal Software, Inc.
+Licensed under the MPL.  See http://www.rabbitmq.com/
+
+=INFO REPORT==== 20-Nov-2017::03:56:19 ===
+node           : rabbit@rabbit_auto2
+home dir       : /root
+config file(s) : /usr/lib/rabbitmq/etc/rabbitmq/rabbitmq.config
+cookie hash    : iqG7DCBA+lxNNLQq/Y6efg==
+log            : /usr/lib/rabbitmq/var/log/rabbitmq/rabbit@rabbit_auto2.log
+sasl log       : /usr/lib/rabbitmq/var/log/rabbitmq/rabbit@rabbit_auto2-sasl.log
+database dir   : /usr/lib/rabbitmq/var/lib/rabbitmq/mnesia/rabbit@rabbit_auto2
+
+=INFO REPORT==== 20-Nov-2017::03:56:21 ===
+autocluster: Running discover/join step
+
+=INFO REPORT==== 20-Nov-2017::03:56:21 ===
+autocluster: Apps 'rabbit' and 'mnesia' successfully stopped
+
+=INFO REPORT==== 20-Nov-2017::03:56:21 ===
+autocluster: Running step initialize_backend
+
+=INFO REPORT==== 20-Nov-2017::03:56:21 ===
+autocluster: Running step acquire_startup_lock
+
+=INFO REPORT==== 20-Nov-2017::03:57:48 ===
+autocluster: (cleanup) Timer started {60,false}
+
+=INFO REPORT==== 20-Nov-2017::03:57:48 ===
+Starting RabbitMQ 3.6.14 on Erlang 19.3
+Copyright (C) 2007-2017 Pivotal Software, Inc.
+Licensed under the MPL.  See http://www.rabbitmq.com/
+
+=INFO REPORT==== 20-Nov-2017::03:57:48 ===
+node           : rabbit@rabbit_auto2
+home dir       : /root
+config file(s) : /usr/lib/rabbitmq/etc/rabbitmq/rabbitmq.config
+cookie hash    : iqG7DCBA+lxNNLQq/Y6efg==
+log            : /usr/lib/rabbitmq/var/log/rabbitmq/rabbit@rabbit_auto2.log
+sasl log       : /usr/lib/rabbitmq/var/log/rabbitmq/rabbit@rabbit_auto2-sasl.log
+database dir   : /usr/lib/rabbitmq/var/lib/rabbitmq/mnesia/rabbit@rabbit_auto2
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+autocluster: Running discover/join step
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+autocluster: Apps 'rabbit' and 'mnesia' successfully stopped
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+autocluster: Running step initialize_backend
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+autocluster: Running step acquire_startup_lock
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+autocluster: Startup lock acquired
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+autocluster: Running step find_best_node_to_join
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+autocluster: List of registered nodes retrieved from the backend: []
+
+=ERROR REPORT==== 20-Nov-2017::03:57:50 ===
+autocluster: No nodes to choose the preferred from!
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+autocluster: Picked node as the preferred choice for joining: undefined
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+autocluster: Running step maybe_cluster
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+autocluster: We are the first node in the cluster, starting up unconditionally.
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+autocluster: Starting back 'rabbit' application
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+Memory high watermark set to 793 MiB (832526745 bytes) of 992 MiB (1040658432 bytes) total
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+Enabling free disk space monitoring
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+Disk free limit set to 50MB
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+Limiting to approx 924 file handles (829 sockets)
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+FHC read buffering:  OFF
+FHC write buffering: OFF
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+Waiting for Mnesia tables for 30000 ms, 9 retries left
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+Waiting for Mnesia tables for 30000 ms, 9 retries left
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+Priority queues enabled, real BQ is rabbit_variable_queue
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+Starting rabbit_node_monitor
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+Management plugin: using rates mode 'basic'
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+msg_store_transient: using rabbit_msg_store_ets_index to provide index
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+msg_store_persistent: using rabbit_msg_store_ets_index to provide index
+
+=WARNING REPORT==== 20-Nov-2017::03:57:50 ===
+msg_store_persistent: rebuilding indices from scratch
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+started TCP Listener on [::]:5672
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+autocluster: Running registeration step
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+autocluster: Running step register_with_backend
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+autocluster: Running lock release step
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+autocluster: Running step release_startup_lock
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+MQTT retained message store: rabbit_mqtt_retained_msg_store_dets
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+started MQTT TCP Listener on [::]:1883
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+rabbit_stomp: default user 'guest' enabled
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+started STOMP TCP Listener on [::]:61613
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+rabbit_web_stomp: listening for HTTP connections on 0.0.0.0:15674
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+Management plugin started. Port: 15672
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+Statistics database started.
+
+=INFO REPORT==== 20-Nov-2017::03:57:50 ===
+Server startup complete; 17 plugins started.
+ * rabbitmq_federation_management
+ * rabbitmq_shovel_management
+ * rabbitmq_management
+ * rabbitmq_management_agent
+ * rabbitmq_web_stomp
+ * rabbitmq_stomp
+ * rabbitmq_consistent_hash_exchange
+ * rabbitmq_web_dispatch
+ * rabbitmq_federation
+ * rabbitmq_mqtt
+ * rabbitmq_shovel
+ * cowboy
+ * autocluster
+ * rabbitmq_aws
+ * amqp_client
+ * sockjs
+ * cowlib
+
+=INFO REPORT==== 20-Nov-2017::04:07:54 ===
+autocluster: (cleanup) Timer started {60,false}
+
+=INFO REPORT==== 20-Nov-2017::04:07:54 ===
+Starting RabbitMQ 3.6.14 on Erlang 19.3
+Copyright (C) 2007-2017 Pivotal Software, Inc.
+Licensed under the MPL.  See http://www.rabbitmq.com/
+
+=INFO REPORT==== 20-Nov-2017::04:07:54 ===
+node           : rabbit@rabbit_auto2
+home dir       : /root
+config file(s) : /usr/lib/rabbitmq/etc/rabbitmq/rabbitmq.config
+cookie hash    : iqG7DCBA+lxNNLQq/Y6efg==
+log            : /usr/lib/rabbitmq/var/log/rabbitmq/rabbit@rabbit_auto2.log
+sasl log       : /usr/lib/rabbitmq/var/log/rabbitmq/rabbit@rabbit_auto2-sasl.log
+database dir   : /usr/lib/rabbitmq/var/lib/rabbitmq/mnesia/rabbit@rabbit_auto2
+
+=INFO REPORT==== 20-Nov-2017::04:07:55 ===
+autocluster: Running discover/join step
+
+=INFO REPORT==== 20-Nov-2017::04:07:55 ===
+autocluster: Apps 'rabbit' and 'mnesia' successfully stopped
+
+=INFO REPORT==== 20-Nov-2017::04:07:55 ===
+autocluster: Running step initialize_backend
+
+=INFO REPORT==== 20-Nov-2017::04:07:55 ===
+autocluster: Running step acquire_startup_lock
+
+=INFO REPORT==== 20-Nov-2017::04:07:55 ===
+autocluster: Startup lock acquired
+
+=INFO REPORT==== 20-Nov-2017::04:07:55 ===
+autocluster: Running step find_best_node_to_join
+
+=INFO REPORT==== 20-Nov-2017::04:07:55 ===
+autocluster: List of registered nodes retrieved from the backend: []
+
+=ERROR REPORT==== 20-Nov-2017::04:07:55 ===
+autocluster: No nodes to choose the preferred from!
+
+=INFO REPORT==== 20-Nov-2017::04:07:55 ===
+autocluster: Picked node as the preferred choice for joining: undefined
+
+=INFO REPORT==== 20-Nov-2017::04:07:55 ===
+autocluster: Running step maybe_cluster
+
+=INFO REPORT==== 20-Nov-2017::04:07:55 ===
+autocluster: We are the first node in the cluster, starting up unconditionally.
+
+=INFO REPORT==== 20-Nov-2017::04:07:55 ===
+autocluster: Starting back 'rabbit' application
+
+=INFO REPORT==== 20-Nov-2017::04:07:55 ===
+Memory high watermark set to 793 MiB (832526745 bytes) of 992 MiB (1040658432 bytes) total
+
+=INFO REPORT==== 20-Nov-2017::04:07:55 ===
+Enabling free disk space monitoring
+
+=INFO REPORT==== 20-Nov-2017::04:07:55 ===
+Disk free limit set to 50MB
+
+=INFO REPORT==== 20-Nov-2017::04:07:55 ===
+Limiting to approx 924 file handles (829 sockets)
+
+=INFO REPORT==== 20-Nov-2017::04:07:55 ===
+FHC read buffering:  OFF
+FHC write buffering: OFF
+
+=INFO REPORT==== 20-Nov-2017::04:07:55 ===
+Waiting for Mnesia tables for 30000 ms, 9 retries left
+
+=INFO REPORT==== 20-Nov-2017::04:07:55 ===
+Waiting for Mnesia tables for 30000 ms, 9 retries left
+
+=INFO REPORT==== 20-Nov-2017::04:07:55 ===
+Priority queues enabled, real BQ is rabbit_variable_queue
+
+=INFO REPORT==== 20-Nov-2017::04:07:55 ===
+Starting rabbit_node_monitor
+
+=INFO REPORT==== 20-Nov-2017::04:07:56 ===
+Management plugin: using rates mode 'basic'
+
+=INFO REPORT==== 20-Nov-2017::04:07:56 ===
+msg_store_transient: using rabbit_msg_store_ets_index to provide index
+
+=INFO REPORT==== 20-Nov-2017::04:07:56 ===
+msg_store_persistent: using rabbit_msg_store_ets_index to provide index
+
+=WARNING REPORT==== 20-Nov-2017::04:07:56 ===
+msg_store_persistent: rebuilding indices from scratch
+
+=INFO REPORT==== 20-Nov-2017::04:07:56 ===
+started TCP Listener on [::]:5672
+
+=INFO REPORT==== 20-Nov-2017::04:07:56 ===
+autocluster: Running registeration step
+
+=INFO REPORT==== 20-Nov-2017::04:07:56 ===
+autocluster: Running step register_with_backend
+
+=INFO REPORT==== 20-Nov-2017::04:07:56 ===
+autocluster: Running lock release step
+
+=INFO REPORT==== 20-Nov-2017::04:07:56 ===
+autocluster: Running step release_startup_lock
+
+=INFO REPORT==== 20-Nov-2017::04:07:56 ===
+MQTT retained message store: rabbit_mqtt_retained_msg_store_dets
+
+=INFO REPORT==== 20-Nov-2017::04:07:56 ===
+started MQTT TCP Listener on [::]:1883
+
+=INFO REPORT==== 20-Nov-2017::04:07:56 ===
+rabbit_stomp: default user 'guest' enabled
+
+=INFO REPORT==== 20-Nov-2017::04:07:56 ===
+started STOMP TCP Listener on [::]:61613
+
+=INFO REPORT==== 20-Nov-2017::04:07:56 ===
+rabbit_web_stomp: listening for HTTP connections on 0.0.0.0:15674
+
+=INFO REPORT==== 20-Nov-2017::04:07:56 ===
+Management plugin started. Port: 15672
+
+=INFO REPORT==== 20-Nov-2017::04:07:56 ===
+Statistics database started.
+
+=INFO REPORT==== 20-Nov-2017::04:07:56 ===
+Server startup complete; 17 plugins started.
+ * rabbitmq_federation_management
+ * rabbitmq_shovel_management
+ * rabbitmq_management
+ * rabbitmq_management_agent
+ * rabbitmq_web_stomp
+ * rabbitmq_stomp
+ * rabbitmq_consistent_hash_exchange
+ * rabbitmq_web_dispatch
+ * rabbitmq_federation
+ * rabbitmq_mqtt
+ * rabbitmq_shovel
+ * cowboy
+ * autocluster
+ * rabbitmq_aws
+ * amqp_client
+ * sockjs
+ * cowlib
+
+=INFO REPORT==== 20-Nov-2017::04:12:32 ===
+Starting RabbitMQ 3.6.14 on Erlang 19.3
+Copyright (C) 2007-2017 Pivotal Software, Inc.
+Licensed under the MPL.  See http://www.rabbitmq.com/
+
+=INFO REPORT==== 20-Nov-2017::04:12:32 ===
+node           : rabbit@rabbit_auto2
+home dir       : /root
+config file(s) : /usr/lib/rabbitmq/etc/rabbitmq/rabbitmq.config
+cookie hash    : iqG7DCBA+lxNNLQq/Y6efg==
+log            : /usr/lib/rabbitmq/var/log/rabbitmq/rabbit@rabbit_auto2.log
+sasl log       : /usr/lib/rabbitmq/var/log/rabbitmq/rabbit@rabbit_auto2-sasl.log
+database dir   : /usr/lib/rabbitmq/var/lib/rabbitmq/mnesia/rabbit@rabbit_auto2
+
+=INFO REPORT==== 20-Nov-2017::04:12:34 ===
+autocluster: Running discover/join step
+
+=INFO REPORT==== 20-Nov-2017::04:12:34 ===
+autocluster: Apps 'rabbit' and 'mnesia' successfully stopped
+
+=INFO REPORT==== 20-Nov-2017::04:12:34 ===
+autocluster: Running step initialize_backend
+
+=ERROR REPORT==== 20-Nov-2017::04:12:34 ===
+autocluster: Skipping step initialize_backend because backend module is not configured! 
+
+=INFO REPORT==== 20-Nov-2017::04:12:34 ===
+autocluster: Starting back 'rabbit' application
+
+=INFO REPORT==== 20-Nov-2017::04:12:34 ===
+Memory high watermark set to 793 MiB (832526745 bytes) of 992 MiB (1040658432 bytes) total
+
+=INFO REPORT==== 20-Nov-2017::04:12:34 ===
+Enabling free disk space monitoring
+
+=INFO REPORT==== 20-Nov-2017::04:12:34 ===
+Disk free limit set to 50MB
+
+=INFO REPORT==== 20-Nov-2017::04:12:34 ===
+Limiting to approx 924 file handles (829 sockets)
+
+=INFO REPORT==== 20-Nov-2017::04:12:34 ===
+FHC read buffering:  OFF
+FHC write buffering: OFF
+
+=INFO REPORT==== 20-Nov-2017::04:12:34 ===
+Waiting for Mnesia tables for 30000 ms, 9 retries left
+
+=INFO REPORT==== 20-Nov-2017::04:12:34 ===
+Waiting for Mnesia tables for 30000 ms, 9 retries left
+
+=INFO REPORT==== 20-Nov-2017::04:12:34 ===
+Priority queues enabled, real BQ is rabbit_variable_queue
+
+=INFO REPORT==== 20-Nov-2017::04:12:34 ===
+Starting rabbit_node_monitor
+
+=INFO REPORT==== 20-Nov-2017::04:12:34 ===
+Management plugin: using rates mode 'basic'
+
+=INFO REPORT==== 20-Nov-2017::04:12:34 ===
+msg_store_transient: using rabbit_msg_store_ets_index to provide index
+
+=INFO REPORT==== 20-Nov-2017::04:12:34 ===
+msg_store_persistent: using rabbit_msg_store_ets_index to provide index
+
+=WARNING REPORT==== 20-Nov-2017::04:12:34 ===
+msg_store_persistent: rebuilding indices from scratch
+
+=INFO REPORT==== 20-Nov-2017::04:12:34 ===
+started TCP Listener on [::]:5672
+
+=INFO REPORT==== 20-Nov-2017::04:12:34 ===
+autocluster: Running registeration step
+
+=INFO REPORT==== 20-Nov-2017::04:12:34 ===
+autocluster: Running step register_with_backend
+
+=ERROR REPORT==== 20-Nov-2017::04:12:34 ===
+autocluster: Skipping step register_with_backend because backend module is not configured! 
+
+=INFO REPORT==== 20-Nov-2017::04:12:34 ===
+autocluster: Running lock release step
+
+=INFO REPORT==== 20-Nov-2017::04:12:34 ===
+autocluster: Running step release_startup_lock
+
+=ERROR REPORT==== 20-Nov-2017::04:12:34 ===
+autocluster: Skipping step release_startup_lock because backend module is not configured! 
+
+=INFO REPORT==== 20-Nov-2017::04:12:34 ===
+MQTT retained message store: rabbit_mqtt_retained_msg_store_dets
+
+=INFO REPORT==== 20-Nov-2017::04:12:34 ===
+started MQTT TCP Listener on [::]:1883
+
+=INFO REPORT==== 20-Nov-2017::04:12:34 ===
+rabbit_stomp: default user 'guest' enabled
+
+=INFO REPORT==== 20-Nov-2017::04:12:34 ===
+started STOMP TCP Listener on [::]:61613
+
+=INFO REPORT==== 20-Nov-2017::04:12:34 ===
+rabbit_web_stomp: listening for HTTP connections on 0.0.0.0:15674
+
+=INFO REPORT==== 20-Nov-2017::04:12:34 ===
+Management plugin started. Port: 15672
+
+=INFO REPORT==== 20-Nov-2017::04:12:34 ===
+Statistics database started.
+
+=INFO REPORT==== 20-Nov-2017::04:12:34 ===
+Server startup complete; 17 plugins started.
+ * rabbitmq_federation_management
+ * rabbitmq_shovel_management
+ * rabbitmq_management
+ * rabbitmq_management_agent
+ * rabbitmq_web_stomp
+ * rabbitmq_stomp
+ * rabbitmq_consistent_hash_exchange
+ * rabbitmq_web_dispatch
+ * rabbitmq_federation
+ * rabbitmq_mqtt
+ * rabbitmq_shovel
+ * cowboy
+ * autocluster
+ * rabbitmq_aws
+ * amqp_client
+ * sockjs
+ * cowlib
+
+=INFO REPORT==== 20-Nov-2017::04:15:18 ===
+Starting RabbitMQ 3.6.14 on Erlang 19.3
+Copyright (C) 2007-2017 Pivotal Software, Inc.
+Licensed under the MPL.  See http://www.rabbitmq.com/
+
+=INFO REPORT==== 20-Nov-2017::04:15:18 ===
+node           : rabbit@rabbit_auto2
+home dir       : /root
+config file(s) : /usr/lib/rabbitmq/etc/rabbitmq/rabbitmq.config
+cookie hash    : iqG7DCBA+lxNNLQq/Y6efg==
+log            : /usr/lib/rabbitmq/var/log/rabbitmq/rabbit@rabbit_auto2.log
+sasl log       : /usr/lib/rabbitmq/var/log/rabbitmq/rabbit@rabbit_auto2-sasl.log
+database dir   : /usr/lib/rabbitmq/var/lib/rabbitmq/mnesia/rabbit@rabbit_auto2
+
+=INFO REPORT==== 20-Nov-2017::04:15:19 ===
+autocluster: Running discover/join step
+
+=INFO REPORT==== 20-Nov-2017::04:15:19 ===
+autocluster: Apps 'rabbit' and 'mnesia' successfully stopped
+
+=INFO REPORT==== 20-Nov-2017::04:15:19 ===
+autocluster: Running step initialize_backend
+
+=ERROR REPORT==== 20-Nov-2017::04:15:19 ===
+autocluster: Skipping step initialize_backend because backend module is not configured! 
+
+=INFO REPORT==== 20-Nov-2017::04:15:19 ===
+autocluster: Starting back 'rabbit' application
+
+=INFO REPORT==== 20-Nov-2017::04:15:19 ===
+Memory high watermark set to 793 MiB (832526745 bytes) of 992 MiB (1040658432 bytes) total
+
+=INFO REPORT==== 20-Nov-2017::04:15:19 ===
+Enabling free disk space monitoring
+
+=INFO REPORT==== 20-Nov-2017::04:15:19 ===
+Disk free limit set to 50MB
+
+=INFO REPORT==== 20-Nov-2017::04:15:19 ===
+Limiting to approx 924 file handles (829 sockets)
+
+=INFO REPORT==== 20-Nov-2017::04:15:19 ===
+FHC read buffering:  OFF
+FHC write buffering: OFF
+
+=INFO REPORT==== 20-Nov-2017::04:15:19 ===
+Waiting for Mnesia tables for 30000 ms, 9 retries left
+
+=INFO REPORT==== 20-Nov-2017::04:15:19 ===
+Waiting for Mnesia tables for 30000 ms, 9 retries left
+
+=INFO REPORT==== 20-Nov-2017::04:15:19 ===
+Priority queues enabled, real BQ is rabbit_variable_queue
+
+=INFO REPORT==== 20-Nov-2017::04:15:19 ===
+Starting rabbit_node_monitor
+
+=INFO REPORT==== 20-Nov-2017::04:15:19 ===
+Management plugin: using rates mode 'basic'
+
+=INFO REPORT==== 20-Nov-2017::04:15:19 ===
+msg_store_transient: using rabbit_msg_store_ets_index to provide index
+
+=INFO REPORT==== 20-Nov-2017::04:15:19 ===
+msg_store_persistent: using rabbit_msg_store_ets_index to provide index
+
+=WARNING REPORT==== 20-Nov-2017::04:15:19 ===
+msg_store_persistent: rebuilding indices from scratch
+
+=INFO REPORT==== 20-Nov-2017::04:15:19 ===
+started TCP Listener on [::]:5672
+
+=INFO REPORT==== 20-Nov-2017::04:15:19 ===
+autocluster: Running registeration step
+
+=INFO REPORT==== 20-Nov-2017::04:15:19 ===
+autocluster: Running step register_with_backend
+
+=ERROR REPORT==== 20-Nov-2017::04:15:19 ===
+autocluster: Skipping step register_with_backend because backend module is not configured! 
+
+=INFO REPORT==== 20-Nov-2017::04:15:19 ===
+autocluster: Running lock release step
+
+=INFO REPORT==== 20-Nov-2017::04:15:19 ===
+autocluster: Running step release_startup_lock
+
+=ERROR REPORT==== 20-Nov-2017::04:15:19 ===
+autocluster: Skipping step release_startup_lock because backend module is not configured! 
+
+=INFO REPORT==== 20-Nov-2017::04:15:19 ===
+MQTT retained message store: rabbit_mqtt_retained_msg_store_dets
+
+=INFO REPORT==== 20-Nov-2017::04:15:19 ===
+started MQTT TCP Listener on [::]:1883
+
+=INFO REPORT==== 20-Nov-2017::04:15:19 ===
+rabbit_stomp: default user 'guest' enabled
+
+=INFO REPORT==== 20-Nov-2017::04:15:19 ===
+started STOMP TCP Listener on [::]:61613
+
+=INFO REPORT==== 20-Nov-2017::04:15:19 ===
+rabbit_web_stomp: listening for HTTP connections on 0.0.0.0:15674
+
+=INFO REPORT==== 20-Nov-2017::04:15:19 ===
+Management plugin started. Port: 15672
+
+=INFO REPORT==== 20-Nov-2017::04:15:19 ===
+Statistics database started.
+
+=INFO REPORT==== 20-Nov-2017::04:15:19 ===
+Server startup complete; 17 plugins started.
+ * rabbitmq_federation_management
+ * rabbitmq_shovel_management
+ * rabbitmq_management
+ * rabbitmq_management_agent
+ * rabbitmq_web_stomp
+ * rabbitmq_stomp
+ * rabbitmq_consistent_hash_exchange
+ * rabbitmq_web_dispatch
+ * rabbitmq_federation
+ * rabbitmq_mqtt
+ * rabbitmq_shovel
+ * cowboy
+ * autocluster
+ * rabbitmq_aws
+ * amqp_client
+ * sockjs
+ * cowlib
+
+=INFO REPORT==== 20-Nov-2017::04:17:15 ===
+autocluster: (cleanup) Timer started {60,false}
+
+=INFO REPORT==== 20-Nov-2017::04:17:15 ===
+Starting RabbitMQ 3.6.14 on Erlang 19.3
+Copyright (C) 2007-2017 Pivotal Software, Inc.
+Licensed under the MPL.  See http://www.rabbitmq.com/
+
+=INFO REPORT==== 20-Nov-2017::04:17:15 ===
+node           : rabbit@rabbit_auto2
+home dir       : /root
+config file(s) : /usr/lib/rabbitmq/etc/rabbitmq/rabbitmq.config
+cookie hash    : iqG7DCBA+lxNNLQq/Y6efg==
+log            : /usr/lib/rabbitmq/var/log/rabbitmq/rabbit@rabbit_auto2.log
+sasl log       : /usr/lib/rabbitmq/var/log/rabbitmq/rabbit@rabbit_auto2-sasl.log
+database dir   : /usr/lib/rabbitmq/var/lib/rabbitmq/mnesia/rabbit@rabbit_auto2
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+autocluster: Running discover/join step
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+autocluster: Apps 'rabbit' and 'mnesia' successfully stopped
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+autocluster: Running step initialize_backend
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+autocluster: Running step acquire_startup_lock
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+autocluster: Startup lock acquired
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+autocluster: Running step find_best_node_to_join
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+autocluster: List of registered nodes retrieved from the backend: []
+
+=ERROR REPORT==== 20-Nov-2017::04:17:16 ===
+autocluster: No nodes to choose the preferred from!
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+autocluster: Picked node as the preferred choice for joining: undefined
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+autocluster: Running step maybe_cluster
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+autocluster: We are the first node in the cluster, starting up unconditionally.
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+autocluster: Starting back 'rabbit' application
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+Memory high watermark set to 793 MiB (832526745 bytes) of 992 MiB (1040658432 bytes) total
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+Enabling free disk space monitoring
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+Disk free limit set to 50MB
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+Limiting to approx 924 file handles (829 sockets)
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+FHC read buffering:  OFF
+FHC write buffering: OFF
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+Waiting for Mnesia tables for 30000 ms, 9 retries left
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+Waiting for Mnesia tables for 30000 ms, 9 retries left
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+Priority queues enabled, real BQ is rabbit_variable_queue
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+Starting rabbit_node_monitor
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+Management plugin: using rates mode 'basic'
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+msg_store_transient: using rabbit_msg_store_ets_index to provide index
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+msg_store_persistent: using rabbit_msg_store_ets_index to provide index
+
+=WARNING REPORT==== 20-Nov-2017::04:17:16 ===
+msg_store_persistent: rebuilding indices from scratch
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+started TCP Listener on [::]:5672
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+autocluster: Running registeration step
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+autocluster: Running step register_with_backend
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+autocluster: Running lock release step
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+autocluster: Running step release_startup_lock
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+MQTT retained message store: rabbit_mqtt_retained_msg_store_dets
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+started MQTT TCP Listener on [::]:1883
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+rabbit_stomp: default user 'guest' enabled
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+started STOMP TCP Listener on [::]:61613
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+rabbit_web_stomp: listening for HTTP connections on 0.0.0.0:15674
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+Management plugin started. Port: 15672
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+Statistics database started.
+
+=INFO REPORT==== 20-Nov-2017::04:17:16 ===
+Server startup complete; 17 plugins started.
+ * rabbitmq_federation_management
+ * rabbitmq_shovel_management
+ * rabbitmq_management
+ * rabbitmq_management_agent
+ * rabbitmq_web_stomp
+ * rabbitmq_stomp
+ * rabbitmq_consistent_hash_exchange
+ * rabbitmq_web_dispatch
+ * rabbitmq_federation
+ * rabbitmq_mqtt
+ * rabbitmq_shovel
+ * cowboy
+ * autocluster
+ * rabbitmq_aws
+ * amqp_client
+ * sockjs
+ * cowlib
+
+=INFO REPORT==== 20-Nov-2017::04:20:06 ===
+Starting RabbitMQ 3.6.14 on Erlang 19.3
+Copyright (C) 2007-2017 Pivotal Software, Inc.
+Licensed under the MPL.  See http://www.rabbitmq.com/
+
+=INFO REPORT==== 20-Nov-2017::04:20:06 ===
+node           : rabbit@rabbit_auto2
+home dir       : /root
+config file(s) : /usr/lib/rabbitmq/etc/rabbitmq/rabbitmq.config
+cookie hash    : iqG7DCBA+lxNNLQq/Y6efg==
+log            : /usr/lib/rabbitmq/var/log/rabbitmq/rabbit@rabbit_auto2.log
+sasl log       : /usr/lib/rabbitmq/var/log/rabbitmq/rabbit@rabbit_auto2-sasl.log
+database dir   : /usr/lib/rabbitmq/var/lib/rabbitmq/mnesia/rabbit@rabbit_auto2
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+autocluster: Running discover/join step
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+autocluster: Apps 'rabbit' and 'mnesia' successfully stopped
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+autocluster: Running step initialize_backend
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+autocluster: Using consul backend
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+autocluster: Running step acquire_startup_lock
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+autocluster: PUT http://localhost:8500/v1/session/create [[]] [<<"{\"Name\":\"rabbit@rabbit_auto2\",\"TTL\":\"30s\"}">>]
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+autocluster: Response: [{ok,{{"HTTP/1.1",200,"OK"},
+                             [{"date","Mon, 20 Nov 2017 04:20:08 GMT"},
+                              {"content-length","45"},
+                              {"content-type","application/json"}],
+                             "{\"ID\":\"7adc6027-a834-ebfb-e1b6-7a15ac93b2d0\"}"}}]
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+autocluster: Starting session renewal
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+autocluster: PUT http://localhost:8500/v1/kv/rabbitmq/default/startup_lock?acquire=7adc6027-a834-ebfb-e1b6-7a15ac93b2d0 [[]] [[]]
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+autocluster: Response: [{ok,{{"HTTP/1.1",200,"OK"},
+                             [{"date","Mon, 20 Nov 2017 04:20:08 GMT"},
+                              {"content-length","4"},
+                              {"content-type","application/json"}],
+                             "true"}}]
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+autocluster: Startup lock acquired
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+autocluster: Running step find_best_node_to_join
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+autocluster: GET http://localhost:8500/v1/health/service/rabbitmq?passing
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+autocluster: Response: [{ok,{{"HTTP/1.1",200,"OK"},
+                             [{"date","Mon, 20 Nov 2017 04:20:08 GMT"},
+                              {"content-length","2"},
+                              {"content-type","application/json"},
+                              {"x-consul-index","67"},
+                              {"x-consul-knownleader","true"},
+                              {"x-consul-lastcontact","0"}],
+                             "[]"}}]
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+autocluster: List of registered nodes retrieved from the backend: []
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+autocluster: Fetching node details. Unreachable nodes (or nodes that responded with an error): []
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+autocluster: Fetching node details. Responses: []
+
+=ERROR REPORT==== 20-Nov-2017::04:20:08 ===
+autocluster: No nodes to choose the preferred from!
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+autocluster: Picked node as the preferred choice for joining: undefined
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+autocluster: Running step maybe_cluster
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+autocluster: We are the first node in the cluster, starting up unconditionally.
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+autocluster: Starting back 'rabbit' application
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+Memory high watermark set to 793 MiB (832526745 bytes) of 992 MiB (1040658432 bytes) total
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+Enabling free disk space monitoring
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+Disk free limit set to 50MB
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+Limiting to approx 924 file handles (829 sockets)
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+FHC read buffering:  OFF
+FHC write buffering: OFF
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+Waiting for Mnesia tables for 30000 ms, 9 retries left
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+Waiting for Mnesia tables for 30000 ms, 9 retries left
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+Priority queues enabled, real BQ is rabbit_variable_queue
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+Starting rabbit_node_monitor
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+Management plugin: using rates mode 'basic'
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+msg_store_transient: using rabbit_msg_store_ets_index to provide index
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+msg_store_persistent: using rabbit_msg_store_ets_index to provide index
+
+=WARNING REPORT==== 20-Nov-2017::04:20:08 ===
+msg_store_persistent: rebuilding indices from scratch
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+started TCP Listener on [::]:5672
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+autocluster: Running registeration step
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+autocluster: Running step register_with_backend
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+autocluster: PUT http://localhost:8500/v1/agent/service/register [[]] [<<"{\"ID\":\"rabbitmq:vm002\",\"Name\":\"rabbitmq\",\"Address\":\"vm002\",\"Port\":5672,\"Check\":{\"Notes\":\"rabbitmq-autocluster node check\",\"TTL\":\"30s\",\"Status\":\"passing\"}}">>]
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+autocluster: Response: [{ok,{{"HTTP/1.1",200,"OK"},
+                             [{"date","Mon, 20 Nov 2017 04:20:08 GMT"},
+                              {"content-length","0"},
+                              {"content-type","text/plain; charset=utf-8"}],
+                             []}}]
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+autocluster: Running lock release step
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+autocluster: Running step release_startup_lock
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+autocluster: Stopped session renewal
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+autocluster: PUT http://localhost:8500/v1/kv/rabbitmq/default/startup_lock?release=7adc6027-a834-ebfb-e1b6-7a15ac93b2d0 [[]] [[]]
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+autocluster: Response: [{ok,{{"HTTP/1.1",200,"OK"},
+                             [{"date","Mon, 20 Nov 2017 04:20:08 GMT"},
+                              {"content-length","4"},
+                              {"content-type","application/json"}],
+                             "true"}}]
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+MQTT retained message store: rabbit_mqtt_retained_msg_store_dets
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+started MQTT TCP Listener on [::]:1883
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+rabbit_stomp: default user 'guest' enabled
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+started STOMP TCP Listener on [::]:61613
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+rabbit_web_stomp: listening for HTTP connections on 0.0.0.0:15674
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+Management plugin started. Port: 15672
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+Statistics database started.
+
+=INFO REPORT==== 20-Nov-2017::04:20:08 ===
+Server startup complete; 17 plugins started.
+ * rabbitmq_federation_management
+ * rabbitmq_shovel_management
+ * rabbitmq_management
+ * rabbitmq_management_agent
+ * autocluster
+ * rabbitmq_aws
+ * rabbitmq_web_stomp
+ * rabbitmq_stomp
+ * rabbitmq_consistent_hash_exchange
+ * rabbitmq_web_dispatch
+ * rabbitmq_federation
+ * rabbitmq_mqtt
+ * rabbitmq_shovel
+ * cowboy
+ * amqp_client
+ * sockjs
+ * cowlib
+
+=INFO REPORT==== 20-Nov-2017::04:20:23 ===
+autocluster: PUT http://localhost:8500/v1/agent/check/pass/service%3Arabbitmq%3Avm002 [[]] [[]]
+
+=INFO REPORT==== 20-Nov-2017::04:20:23 ===
+autocluster: Response: [{ok,{{"HTTP/1.1",200,"OK"},
+                             [{"date","Mon, 20 Nov 2017 04:20:23 GMT"},
+                              {"content-length","0"},
+                              {"content-type","text/plain; charset=utf-8"}],
+                             []}}]
+
+=INFO REPORT==== 20-Nov-2017::04:20:38 ===
+autocluster: PUT http://localhost:8500/v1/agent/check/pass/service%3Arabbitmq%3Avm002 [[]] [[]]
+
+=INFO REPORT==== 20-Nov-2017::04:20:38 ===
+autocluster: Response: [{ok,{{"HTTP/1.1",200,"OK"},
+                             [{"date","Mon, 20 Nov 2017 04:20:38 GMT"},
+                              {"content-length","0"},
+                              {"content-type","text/plain; charset=utf-8"}],
+                             []}}]
+
+=INFO REPORT==== 20-Nov-2017::04:20:53 ===
+autocluster: PUT http://localhost:8500/v1/agent/check/pass/service%3Arabbitmq%3Avm002 [[]] [[]]
+
+=INFO REPORT==== 20-Nov-2017::04:20:53 ===
+autocluster: Response: [{ok,{{"HTTP/1.1",200,"OK"},
+                             [{"date","Mon, 20 Nov 2017 04:20:53 GMT"},
+                              {"content-length","0"},
+                              {"content-type","text/plain; charset=utf-8"}],
+                             []}}]
+
+=INFO REPORT==== 20-Nov-2017::04:21:08 ===
+autocluster: PUT http://localhost:8500/v1/agent/check/pass/service%3Arabbitmq%3Avm002 [[]] [[]]
+
+=INFO REPORT==== 20-Nov-2017::04:21:08 ===
+autocluster: Response: [{ok,{{"HTTP/1.1",200,"OK"},
+                             [{"date","Mon, 20 Nov 2017 04:21:08 GMT"},
+                              {"content-length","0"},
+                              {"content-type","text/plain; charset=utf-8"}],
+                             []}}]
+
+=INFO REPORT==== 20-Nov-2017::04:25:01 ===
+Starting RabbitMQ 3.6.14 on Erlang 19.3
+Copyright (C) 2007-2017 Pivotal Software, Inc.
+Licensed under the MPL.  See http://www.rabbitmq.com/
+
+=INFO REPORT==== 20-Nov-2017::04:25:01 ===
+node           : rabbit@rabbit_auto2
+home dir       : /root
+config file(s) : /usr/lib/rabbitmq/etc/rabbitmq/rabbitmq.config
+cookie hash    : iqG7DCBA+lxNNLQq/Y6efg==
+log            : /usr/lib/rabbitmq/var/log/rabbitmq/rabbit@rabbit_auto2.log
+sasl log       : /usr/lib/rabbitmq/var/log/rabbitmq/rabbit@rabbit_auto2-sasl.log
+database dir   : /usr/lib/rabbitmq/var/lib/rabbitmq/mnesia/rabbit@rabbit_auto2
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+autocluster: Running discover/join step
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+autocluster: Apps 'rabbit' and 'mnesia' successfully stopped
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+autocluster: Running step initialize_backend
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+autocluster: Using consul backend
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+autocluster: Running step acquire_startup_lock
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+autocluster: PUT http://localhost:8500/v1/session/create [[]] [<<"{\"Name\":\"rabbit@rabbit_auto2\",\"TTL\":\"30s\"}">>]
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+autocluster: Response: [{ok,{{"HTTP/1.1",200,"OK"},
+                             [{"date","Mon, 20 Nov 2017 04:25:03 GMT"},
+                              {"content-length","45"},
+                              {"content-type","application/json"}],
+                             "{\"ID\":\"dfd46ae1-7c92-85b5-8173-948da4099881\"}"}}]
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+autocluster: Starting session renewal
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+autocluster: PUT http://localhost:8500/v1/kv/rabbitmq/default/startup_lock?acquire=dfd46ae1-7c92-85b5-8173-948da4099881 [[]] [[]]
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+autocluster: Response: [{ok,{{"HTTP/1.1",200,"OK"},
+                             [{"date","Mon, 20 Nov 2017 04:25:03 GMT"},
+                              {"content-length","4"},
+                              {"content-type","application/json"}],
+                             "true"}}]
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+autocluster: Startup lock acquired
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+autocluster: Running step find_best_node_to_join
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+autocluster: GET http://localhost:8500/v1/health/service/rabbitmq?passing
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+autocluster: Response: [{ok,{{"HTTP/1.1",200,"OK"},
+                             [{"date","Mon, 20 Nov 2017 04:25:03 GMT"},
+                              {"content-length","2"},
+                              {"content-type","application/json"},
+                              {"x-consul-index","95"},
+                              {"x-consul-knownleader","true"},
+                              {"x-consul-lastcontact","0"}],
+                             "[]"}}]
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+autocluster: List of registered nodes retrieved from the backend: []
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+autocluster: Fetching node details. Unreachable nodes (or nodes that responded with an error): []
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+autocluster: Fetching node details. Responses: []
+
+=ERROR REPORT==== 20-Nov-2017::04:25:03 ===
+autocluster: No nodes to choose the preferred from!
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+autocluster: Picked node as the preferred choice for joining: undefined
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+autocluster: Running step maybe_cluster
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+autocluster: We are the first node in the cluster, starting up unconditionally.
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+autocluster: Starting back 'rabbit' application
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+Memory high watermark set to 793 MiB (832526745 bytes) of 992 MiB (1040658432 bytes) total
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+Enabling free disk space monitoring
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+Disk free limit set to 50MB
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+Limiting to approx 924 file handles (829 sockets)
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+FHC read buffering:  OFF
+FHC write buffering: OFF
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+Waiting for Mnesia tables for 30000 ms, 9 retries left
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+Waiting for Mnesia tables for 30000 ms, 9 retries left
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+Priority queues enabled, real BQ is rabbit_variable_queue
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+Starting rabbit_node_monitor
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+Management plugin: using rates mode 'basic'
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+msg_store_transient: using rabbit_msg_store_ets_index to provide index
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+msg_store_persistent: using rabbit_msg_store_ets_index to provide index
+
+=WARNING REPORT==== 20-Nov-2017::04:25:03 ===
+msg_store_persistent: rebuilding indices from scratch
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+started TCP Listener on [::]:5672
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+autocluster: Running registeration step
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+autocluster: Running step register_with_backend
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+autocluster: PUT http://localhost:8500/v1/agent/service/register [[]] [<<"{\"ID\":\"rabbitmq:vm002\",\"Name\":\"rabbitmq\",\"Address\":\"vm002\",\"Port\":5672,\"Check\":{\"Notes\":\"rabbitmq-autocluster node check\",\"TTL\":\"30s\",\"Status\":\"passing\"}}">>]
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+autocluster: Response: [{ok,{{"HTTP/1.1",200,"OK"},
+                             [{"date","Mon, 20 Nov 2017 04:25:03 GMT"},
+                              {"content-length","0"},
+                              {"content-type","text/plain; charset=utf-8"}],
+                             []}}]
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+autocluster: Running lock release step
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+autocluster: Running step release_startup_lock
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+autocluster: Stopped session renewal
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+autocluster: PUT http://localhost:8500/v1/kv/rabbitmq/default/startup_lock?release=dfd46ae1-7c92-85b5-8173-948da4099881 [[]] [[]]
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+autocluster: Response: [{ok,{{"HTTP/1.1",200,"OK"},
+                             [{"date","Mon, 20 Nov 2017 04:25:03 GMT"},
+                              {"content-length","4"},
+                              {"content-type","application/json"}],
+                             "true"}}]
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+Management plugin started. Port: 15672
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+Statistics database started.
+
+=INFO REPORT==== 20-Nov-2017::04:25:03 ===
+Server startup complete; 9 plugins started.
+ * rabbitmq_management
+ * rabbitmq_web_dispatch
+ * autocluster
+ * rabbitmq_aws
+ * amqp_client
+ * rabbitmq_management_agent
+ * rabbitmq_consistent_hash_exchange
+ * cowboy
+ * cowlib
+
+=INFO REPORT==== 20-Nov-2017::04:25:18 ===
+autocluster: PUT http://localhost:8500/v1/agent/check/pass/service%3Arabbitmq%3Avm002 [[]] [[]]
+
+=INFO REPORT==== 20-Nov-2017::04:25:18 ===
+autocluster: Response: [{ok,{{"HTTP/1.1",200,"OK"},
+                             [{"date","Mon, 20 Nov 2017 04:25:18 GMT"},
+                              {"content-length","0"},
+                              {"content-type","text/plain; charset=utf-8"}],
+                             []}}]
+
+=INFO REPORT==== 20-Nov-2017::04:25:33 ===
+autocluster: PUT http://localhost:8500/v1/agent/check/pass/service%3Arabbitmq%3Avm002 [[]] [[]]
+
+=INFO REPORT==== 20-Nov-2017::04:25:33 ===
+autocluster: Response: [{ok,{{"HTTP/1.1",200,"OK"},
+                             [{"date","Mon, 20 Nov 2017 04:25:33 GMT"},
+                              {"content-length","0"},
+                              {"content-type","text/plain; charset=utf-8"}],
+                             []}}]
+
+=INFO REPORT==== 20-Nov-2017::04:25:48 ===
+autocluster: PUT http://localhost:8500/v1/agent/check/pass/service%3Arabbitmq%3Avm002 [[]] [[]]
+
+=INFO REPORT==== 20-Nov-2017::04:25:48 ===
+autocluster: Response: [{ok,{{"HTTP/1.1",200,"OK"},
+                             [{"date","Mon, 20 Nov 2017 04:25:48 GMT"},
+                              {"content-length","0"},
+                              {"content-type","text/plain; charset=utf-8"}],
+                             []}}]
+
+=INFO REPORT==== 20-Nov-2017::04:26:03 ===
+autocluster: PUT http://localhost:8500/v1/agent/check/pass/service%3Arabbitmq%3Avm002 [[]] [[]]
+
+=INFO REPORT==== 20-Nov-2017::04:26:03 ===
+autocluster: Response: [{ok,{{"HTTP/1.1",200,"OK"},
+                             [{"date","Mon, 20 Nov 2017 04:26:03 GMT"},
+                              {"content-length","0"},
+                              {"content-type","text/plain; charset=utf-8"}],
+                             []}}]
+
+=INFO REPORT==== 20-Nov-2017::04:26:18 ===
+autocluster: PUT http://localhost:8500/v1/agent/check/pass/service%3Arabbitmq%3Avm002 [[]] [[]]
+
+=INFO REPORT==== 20-Nov-2017::04:26:18 ===
+autocluster: Response: [{ok,{{"HTTP/1.1",200,"OK"},
+                             [{"date","Mon, 20 Nov 2017 04:26:18 GMT"},
+                              {"content-length","0"},
+                              {"content-type","text/plain; charset=utf-8"}],
+                             []}}]
+
+=INFO REPORT==== 20-Nov-2017::04:26:33 ===
+autocluster: PUT http://localhost:8500/v1/agent/check/pass/service%3Arabbitmq%3Avm002 [[]] [[]]
+
+=INFO REPORT==== 20-Nov-2017::04:26:33 ===
+autocluster: Response: [{ok,{{"HTTP/1.1",200,"OK"},
+                             [{"date","Mon, 20 Nov 2017 04:26:33 GMT"},
+                              {"content-length","0"},
+                              {"content-type","text/plain; charset=utf-8"}],
+                             []}}]
+
+=INFO REPORT==== 20-Nov-2017::04:26:48 ===
+autocluster: PUT http://localhost:8500/v1/agent/check/pass/service%3Arabbitmq%3Avm002 [[]] [[]]
+
+=INFO REPORT==== 20-Nov-2017::04:26:48 ===
+autocluster: Response: [{ok,{{"HTTP/1.1",200,"OK"},
+                             [{"date","Mon, 20 Nov 2017 04:26:48 GMT"},
+                              {"content-length","0"},
+                              {"content-type","text/plain; charset=utf-8"}],
+                             []}}]
