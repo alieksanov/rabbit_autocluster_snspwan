@@ -1,0 +1,14 @@
+
+all:
+  children:
+    rabbitmq_autocluster_node:
+      hosts:
+        vm002 became_consul_server=true
+
+  children:
+    rabbitmq_autocluster_pod1:
+      hosts:
+        vm002 became_consul_server=true
+        vm003
+        vm004
+
