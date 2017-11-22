@@ -1,0 +1,3 @@
+yum install ruby-devel gcc make rpm-build rubygems
+gem install --no-ri --no-rdoc fpm
+

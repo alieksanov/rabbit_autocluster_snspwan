@@ -1,6 +1,10 @@
+#!/bin/bash
+
+VERSION="0.1"
+SNSPAWN_INSTANCE="/var/lib/machines/consul_rabbit_v${VERSION}"
 
 fpm -s dir -t rpm \
-	--rpm-verifyscript ./check_if_installed.sh \
-	--rpm-summary "Deploys Consul systemd-nspawn instance for Rabbit autocluster" \
-	-n "consul_rabbit" -v 0.1 /usr/lib/systemd/system/consul-rabbit.service /var/lib/machines/consul_rabbit ./check_if_installed.sh
+        --rpm-summary "Deploys Consul systemd-nspawn instance for Rabbit autocluster version: ${VERSION}" \
+        -n "consul_rabbit" -v ${VERSION} /usr/lib/systemd/system/consul-rabbit.service ${SNSPAWN_INSTANCE}
+
 
