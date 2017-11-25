@@ -1,0 +1,22 @@
+{
+"bind_addr": "0.0.0.0",
+"client_addr": "0.0.0.0",
+"datacenter": "las1",
+"data_dir": "/consul/data",
+"encrypt": "EXz7LFN8hpQ4id8EDYiFoQ==",
+"log_level": "INFO",
+"enable_syslog": false,
+"enable_debug": true,
+"node_name": "rabbitsensu-2-001.shared.adm.las1.mz-inc.com",
+"bootstrap": true,
+"server": true,
+"leave_on_terminate": false,
+"skip_leave_on_interrupt": true,
+"rejoin_after_leave": true,
+"retry_join": [
+  "10.193.52.110:8301",
+  "10.193.52.111:8301",
+  "10.193.52.112:8301"
+  ]
+}
+

@@ -1,0 +1,51 @@
+1. 
+
+cat << EO_REPO > /etc/yum.repos.d/cantos73-local
+
+[centos73-local]
+name=Local CentOS 7.3 Artifactory Mirror
+baseurl=http://yum-1-001.shared.adm.las1.mz-inc.com:8081/artifactory/centos-7.3.1611
+enabled=1
+gpgcheck=0
+metadata_expire=5m
+proxy=_none_
+
+[centos73-extras]
+name=Local CentOS 7.3 Artifactory Mirror
+baseurl=http://yum-1-001.shared.adm.las1.mz-inc.com:8081/artifactory/centos-7.3.1611-extras
+enabled=1
+gpgcheck=0
+metadata_expire=5m
+proxy=_none_
+
+[centos73-updates]
+name=Local CentOS 7.3 Artifactory Mirror
+baseurl=http://yum-1-001.shared.adm.las1.mz-inc.com:8081/artifactory/centos-7.3.1611-updates
+enabled=1
+gpgcheck=0
+metadata_expire=5m
+proxy=_none_
+
+EO_REPO
+
+2. Ensure systemd package has version >=219
+yum install systemd
+
+3. Copy and install  consul_rabbit and rabbit_autocluster rpm's to the end hosts
+
+4. Configure and run conul cluster
+yum localinstall consul_rabbit-0.1-1.x86_64.rpm
+
+
+5. Configure and run rabbitmq cluster
+yum localinstall rabbit-autocluster-0.1-1.x86_64.rpm
+
+
+6. Choose Consul master/clients.
+
+[master config]
+
+
+
+
+[client config]

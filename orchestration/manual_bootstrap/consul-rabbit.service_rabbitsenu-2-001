@@ -1,0 +1,17 @@
+[Unit]
+Description=Consul_for_Rabbit_Autocluster
+After=syslog.target network.target
+
+[Service]
+Type=notify
+NotifyAccess=all
+TimeoutStartSec=3600
+Restart=on-failure
+RestartSec=10
+ExecStart=/usr/bin/systemd-nspawn -D /var/lib/machines/consul_rabbit -M consul_rabbit  /bin/consul agent -config-dir /consul/config -ui
+ExecStop=machinectl terminate consul_rabbit
+SuccessExitStatus=69
+
+[Install]
+WantedBy=multi-user.target
+
