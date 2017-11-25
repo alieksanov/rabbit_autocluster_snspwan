@@ -1,5 +1,6 @@
 
 systemd-nspawn -D ./tmp/consul_rabbit -M consul_auto2 
+# /bin/consul agent -config-dir /consul/config -ui
 
 
 

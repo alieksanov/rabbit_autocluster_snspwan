@@ -145,3 +145,6 @@ event-clock: 2
 alive: consul_auto2 10.138.232.84:8301
 clock: 6
 event-clock: 3
+alive: consul_auto2 10.138.232.84:8301
+clock: 7
+event-clock: 4

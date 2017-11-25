@@ -1,0 +1,26 @@
+{
+"bind_addr": "<%= @facts['networking']['interfaces']['eth1']['ip'] %>", 
+"client_addr": "0.0.0.0",
+"datacenter": "las1",
+"data_dir": "/consul/data",
+"encrypt": "EXz7LFN8hpQ4id8EDYiFoQ==",
+"log_level": "INFO",
+"enable_syslog": false,
+"enable_debug": true,
+"node_name": "<%= @facts['hostname'] %>",
+<% if @consul_role == "server" %>
+"bootstrap": true,
+"server": true,
+<% else %>
+"server": false,
+<% end %>
+"leave_on_terminate": false,
+"skip_leave_on_interrupt": true,
+"rejoin_after_leave": true,
+"retry_join": [ 
+  "10.138.168.215:8301",
+  "10.138.200.211:8301",
+  "10.138.232.84:8301"
+  ]
+}
+

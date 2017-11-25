@@ -1,0 +1,7 @@
+[local]
+name=CentOS-7 - local packages for noarch
+baseurl=file:///opt/projects/rabbit_autocluster_snspwan/pkg/local_yum_repo/el7/$basearch
+enabled=1
+gpgcheck=0
+protect=1
+
