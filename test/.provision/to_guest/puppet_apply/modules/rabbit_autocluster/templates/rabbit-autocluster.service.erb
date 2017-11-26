@@ -1,0 +1,16 @@
+[Unit]
+Description=RabbitMQ_Autocluster_Node
+After=syslog.target network.target
+
+[Service]
+Type=notify
+NotifyAccess=all
+TimeoutStartSec=3600
+Restart=on-failure
+RestartSec=10  
+ExecStart=/usr/bin/systemd-nspawn --setenv "RABBITMQ_USE_LONGNAME=true" -D /var/lib/machines/rabbit_autocluster --bind-ro /etc/resolv.conf --bind /etc/hosts -M <%= @facts['hostname'] %> /launch.sh /usr/lib/rabbitmq/sbin/rabbitmq-server
+ExecStop=machinectl terminate <%= @facts['hostname'] %>
+SuccessExitStatus=69
+
+[Install]
+WantedBy=multi-user.target

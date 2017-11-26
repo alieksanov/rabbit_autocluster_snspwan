@@ -1,0 +1,40 @@
+[
+  {
+    rabbit,
+    [
+      {default_vhost,       <<"/">>},
+      {default_user,        <<"<%= @default_user %>">>},
+      {default_pass,        <<"<%= @default_password %>">>},
+      {default_permissions, [<<".*">>, <<".*">>, <<".*">>]},
+      {default_user_tags, [administrator]},
+
+      {loopback_users, []},
+      {cluster_partition_handling, autoheal},
+      {delegate_count, 64},
+      {fhc_read_buffering, false},
+      {fhc_write_buffering, false},
+      {heartbeat, 60},
+      {queue_index_embed_msgs_below, 0},
+      {queue_index_max_journal_entries, 8192},
+      {queue_master_locator, <<"min-masters">>},
+
+      {log_levels, [{autocluster, debug}, {connection, info}]},
+
+      {vm_memory_high_watermark, 0.8}
+    ]
+  },
+
+  {
+    autocluster, 
+    [
+      {backend, "consul"},
+      {consul_host, "localhost"},
+      {consul_port, 8500},
+      {consul_svc, "rabbitmq"},
+      {consul_svc_addr, "<%= @facts['hostname'] %>"},
+      {autocluster_log_level, debug}
+    ]
+  }
+
+].
+

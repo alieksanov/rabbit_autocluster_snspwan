@@ -7,26 +7,30 @@
 # you're doing.
 Vagrant.configure(2) do |config|
 
-  PROJECT="rabbitmq_v1"
-  RMQIP="192.168.50.123"
-
+  PROJECT="rabbit_autocluster_snspwan"
 
   config.vm.box_version = "1707.01 "
   config.vm.box = "centos/7"
   config.ssh.insert_key = true
 
-  config.vm.box = "centos/7"
+  #config.vm.network "forwarded_port", guest: 5672, host: 5672
+  #config.vm.network "forwarded_port", guest: 15672, host: 15672
 
-  config.vm.network "forwarded_port", guest: 5672, host: 5672
-  config.vm.network "forwarded_port", guest: 15672, host: 15672
-
-  config.vm.define :rmq do |rmq|
-    rmq.vm.hostname = "rmqv1.host1"
-    rmq.vm.network :private_network, ip: "#{RMQIP}"
-    rmq.vm.provision :shell, :path => ".provision/rmq_bootstrap.sh"
-    rmq.vm.provider "virtualbox" do |vb|
-      vb.cpus = "2"
-      vb.memory = "2048"
+  (1..3).each do |i|
+    config.vm.define "rmq00#{i}" do |rmq|
+      rmq.vm.hostname = "rmq00#{i}"
+      rmq.vm.network :private_network, ip: "192.168.50.12#{i}"
+      if "#{i}" == 1
+        rmq.vm.network "forwarded_port", guest: 5672, host: 5672
+        rmq.vm.network "forwarded_port", guest: 15672, host: 15672
+        rmq.vm.network "forwarded_port", guest: 8500, host: 8500
+      end
+      rmq.vm.provision "file", source: "./.provision/to_guest", destination: "$HOME/from_host"
+      rmq.vm.provision :shell, :path => ".provision/rmq_bootstrap.sh", :args => "#{i}"
+      rmq.vm.provider "virtualbox" do |vb|
+        vb.cpus = "2"
+        vb.memory = "1024"
+      end
     end
   end
 
