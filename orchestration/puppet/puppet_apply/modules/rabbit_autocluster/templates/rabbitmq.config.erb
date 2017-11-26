@@ -3,8 +3,8 @@
     rabbit,
     [
       {default_vhost,       <<"/">>},
-      {default_user,        <<"guest">>},
-      {default_pass,        <<"12345">>},
+      {default_user,        <<"<%= @default_user %>">>},
+      {default_pass,        <<"<%= @default_password %>">>},
       {default_permissions, [<<".*">>, <<".*">>, <<".*">>]},
       {default_user_tags, [administrator]},
 

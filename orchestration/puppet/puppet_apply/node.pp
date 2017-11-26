@@ -8,4 +8,8 @@ class {'consul_rabbit':
 class {'rabbit_autocluster': 
   rpm_version => '0.1-1',
 }
-
+->
+rabbit_autocluster::ensure_vhost {'custom':
+  present => false,
+  vhost_name => 'custom', 
+}
